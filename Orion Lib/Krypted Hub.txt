@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KryptoOnn/Roblox-UI-Libs/main/Orion%20Lib/Orion%20Lib%20Source.txt')))()
 
 OrionLib:MakeNotification({
 	Name = "Krypted Hub",
