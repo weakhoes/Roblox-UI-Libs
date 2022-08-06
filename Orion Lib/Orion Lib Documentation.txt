@@ -1,9 +1,8 @@
-# Orion Library
-
+Orion Library
 --------------------------------------------------------------
 This documentation is for the stable release of Orion Library.
 
-# Booting the Library
+Booting the Library
 --------------------------------------------------------------
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 Creating a Window
@@ -27,6 +26,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--------------------------------------------------------------
+
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
@@ -49,6 +50,8 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+
+--------------------------------------------------------------
 
 --[[
 Title = <string> - The title of the notification.
