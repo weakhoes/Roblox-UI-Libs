@@ -12,8 +12,14 @@
 # Flux Lib
 ![image](https://user-images.githubusercontent.com/83477843/183229054-fd08f738-79db-49c5-8d6f-e78b31a54d92.png)
 
+
 # Finity Lib
 ![image](https://user-images.githubusercontent.com/83477843/183231736-0f1dd4e1-9242-4ef1-bbc0-e9d803eff985.png)
+
+
+#Mercury Lib
+![image](https://user-images.githubusercontent.com/83477843/195493871-58efa4a9-3ca4-4590-804c-537028e5a439.png)
+
 
 
 # Discord Lib
