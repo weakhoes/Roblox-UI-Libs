@@ -45,6 +45,9 @@
 # Criminality Lib
 ![image](https://user-images.githubusercontent.com/83477843/183231408-d00b8f56-ad81-4cd6-a037-85c5703c7b95.png)
 
+# Ligma Lib (ONLY WORKS WITH SYNAPSE X)
+![image](https://user-images.githubusercontent.com/83477843/198436236-2487fe9f-ffcd-4d21-9a70-d65b5a8092e8.png)
+
 
 # Linoria Lib
 ![image](https://user-images.githubusercontent.com/83477843/195494361-9650d0a7-c591-4692-99fa-db71caae9609.png)
