@@ -1,3 +1,4 @@
+--(SYNAPSE X ONLY)
 -- example code provided by Unixian#4669, ui lib done by Liga#0001
 -- this is very messy, don't use these same practices when actually using this lib.
 
