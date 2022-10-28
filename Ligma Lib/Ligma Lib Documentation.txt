@@ -1,6 +1,7 @@
 Only Half Of The Documentation is in here
 go to https://unixian.gitbook.io/ligma-ui-library/ to read the rest
 
+(SYNAPSE X ONLY)
 --Beginning--
 How to use the Ligma UI Library (created by Liga#0001)
 ⚠️ THIS UI LIBRARY IS ONLY SUPPORTED ON SYNAPSE X ⚠️
