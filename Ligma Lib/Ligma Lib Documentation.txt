@@ -1,0 +1,257 @@
+Only Half Of The Documentation is in here
+go to https://unixian.gitbook.io/ligma-ui-library/ to read the rest
+
+--Beginning--
+How to use the Ligma UI Library (created by Liga#0001)
+⚠️ THIS UI LIBRARY IS ONLY SUPPORTED ON SYNAPSE X ⚠️
+Using the library
+To use the library, you define a local with a way of getting the library. This can be done by getting the script from a remote source or from a local copy.
+Loading library from remote source
+local library = loadstring(syn.request({
+    Method = "GET",
+    Url = "https://wednesday.wtf/ars/library.lua"
+}).Body)()
+Loading library from local source
+If being used to be shared around, make sure you have a way of getting the library before trying to trying to load from a local source.
+local library = loadfile("path..to..library")
+Defining a window
+You must define a window before starting anything, without this you cannot access tabs, groups, etc.
+Size and position are taken as , if size or position are nil they will be set to their default size/position.
+local window = library:new_window(--[[name, size, position]])
+
+--Example Code--
+If reading documentation isn't your thing, just take the example code.
+-- example code provided by Unixian#4669, ui lib done by Liga#0001
+-- this is very messy, don't use these same practices when actually using this lib.
+​
+local library = loadstring(syn.request({
+  Method = "GET",
+  Url = "https://wednesday.wtf/ars/library.lua"
+}).Body)()
+​
+local window = library:new_window("liga ui lib", nil, nil)
+​
+local main_tab = window:new_tab("main")
+local settings_tab = window:new_tab("settings")
+​
+library:apply_settings(settings_tab)
+​
+local label_group = main_tab:new_group("labels", false)
+local textbox_group = main_tab:new_group("textboxes", true)
+local checkbox_group = main_tab:new_group("checkboxes", false)
+local list_group = main_tab:new_group("lists", true)
+local slider_group = main_tab:new_group("sliders", false)
+local button_group = main_tab:new_group("buttons", true)
+​
+​
+label_group:new_label({
+  text = "Example Label"
+})
+​
+label_group:new_label({
+  text = "Unsafe Label",
+  unsafe = true
+})
+​
+textbox_group:new_textbox("textbox_flag1", {
+  text = "Example Textbox",
+  callback = function(state)
+    print("textbox 1: " .. tostring(state))
+  end
+})
+​
+textbox_group:new_textbox("textbox_flag2", {
+  text = "Example Textbox w/ Default",
+  default = "Default Text",
+  callback = function(state)
+    print("textbox 2: " .. tostring(state))
+  end
+})
+​
+​
+checkbox_group:new_checkbox("checkbox_flag1", {
+  text = "Example Checkbox",
+  callback = function(state)
+    print("checkbox 1: " .. tostring(state))
+  end
+})
+​
+checkbox_group:new_checkbox("checkbox_flag2",{
+  text = "Example Checkbox w/ Default",
+  default = true,
+  callback = function(state)
+    print("checkbox 2: " .. tostring(state))
+  end
+})
+​
+checkbox_group:new_checkbox("checkbox_flag3",{
+  text = "Checkbox w/ Colorpicker",
+  default = true,
+  callback = function(state)
+    print("checkbox 3: " .. tostring(state))
+  end
+}):add_colorpicker("colorpicker_flag1", {
+  text = "Example Colorpicker",
+  default = {
+    color = Color3.fromRGB(255, 0, 0),
+    transparency = 0
+  }
+})
+​
+checkbox_group:new_checkbox("checkbox_flag4", {
+  text = "Checkbox w/ Keybind",
+  default = true,
+  callback = function(state)
+    print("checkbox 4: " .. tostring(state))
+  end
+}):add_keybind("keybind_flag1", {
+  text = "Example Keybind",
+  default = Enum.KeyCode.RightShift,
+  state = false,
+  mode = "Toggle",
+  callback = function(state)
+    print("keybind 1: " .. tostring(state))
+  end
+})
+​
+checkbox_group:new_checkbox("checkbox_flag3",{
+  text = "Unsafe Checkbox",
+  unsafe = true,
+  callback = function(state)
+    print("checkbox 3: " .. tostring(state))
+  end
+})
+​
+list_group:new_list("list_flag1", {
+  text = "Example List",
+  values = {"Option 1", "Option 2", "Option 3"},
+  callback = function(state)
+    print("list 1: " .. tostring(state))
+  end
+})
+​
+list_group:new_list("list_flag2", {
+  text = "Example List w/ Default",
+  values = {"Option 1", "Option 2", "Option 3"},
+  default = "Option 2",
+  callback = function(state)
+    print("list 2: " .. tostring(state))
+  end
+})
+​
+list_group:new_list("list_flag4", {
+  text = "Multi List",
+  values = {"Option 1", "Option 2", "Option 3"},
+  multi = true,
+  default = {"Option 1", "Option 3"},
+  callback = function(state)
+    table.foreach(state, print)
+  end
+})
+​
+slider_group:new_slider("slider_flag1", {
+  text = "Example Slider",
+  min = 0,
+  max = 100,
+  default = 50,
+  decimals = 0,
+  callback = function(state)
+    print("slider 1: " .. tostring(state))
+  end
+})
+​
+slider_group:new_slider("slider_flag2", {
+  text = "Example Slider w/ Suffix",
+  min = 0,
+  max = 100,
+  default = 50,
+  decimals = 0,
+  suffix = " units",
+  callback = function(state)
+    print("slider 2: " .. tostring(state))
+  end
+})
+​
+button_group:new_button({
+  text = "Example Button",
+  callback = function()
+    print("button 1 pressed")
+  end
+})
+​
+
+--Options--
+What all items parented by group take to control certain things they do.
+Defining options
+Every item has their own set of options, look in each item's options section to see what options they take.
+local item = library:new_item(--[[any params before options]],{
+    option: --[[bool/string/etc]],
+    option2: --[[you get it]] 
+})
+Accessing options
+Options are stored in the global environment. You can access this using multiple ways, getgenv is not required to access options in most cases.
+local option = getgenv().options["option"]
+
+--Flags--
+What certain items contain to store a value.
+Defining flags
+Not all items take a flag as a parameter.
+The only items that take a flag as a parameter are as follows:
+Checkboxes
+Sliders
+Lists
+Keybinds
+Colorpickers
+local item = library:item_with_flag("flag", --[[any other parameters]])
+Accessing flags
+Flags are stored in the global environment (like options). You can access this using multiple ways, getgenv is not required to access flags in most cases.
+local flag = getgenv().flags["flag"]
+
+--Tabs--
+Tabs: Where everything originates from.
+Creating a tab
+Make sure you have defined a window before, or you won't be able to call this.
+local tab = window:new_tab("name_of_tab")
+
+--Groups--
+Groups: Where your buttons, sliders, dropdowns, etc are handled.
+Creating a group
+local group = tab:new_group("name_of_group", --[[right: true/false/nil]])
+
+--Item--
+What can be applied to any item.
+Items
+Anything under this category can be added to an item after creating it by calling a function returned by the item. All items (text, label, checkbox, list, slider, button) are supported by these.
+
+--Colorpicker--
+Allows you to add a colorpicker to any item.
+Creating a colorpicker
+You must call this after creating an item (textbox, label, checkbox, etc)
+local item_with_colorpicker = group:new_item(--[[params]])
+:add_colorpicker("flag", {options})
+
+--Options--
+Options for colorpickers
+Text
+The text that goes along with the colorpicker
+local item_with_colorpicker = group:new_item(--[[params]])
+                              :add_colorpicker("flag", {
+                                 text = "Example Colorpicker Text"
+                              })
+--Default--
+The default values that the color picker will be set to.
+This must be passed as a table.
+Color can only be represented as Color3.
+local item_with_colorpicker = group:new_item(--[[params]])
+                              :add_colorpicker("flag", {
+                                 default = {
+                                    color = Color3.fromRGB(1, 2, 3),
+                                    transparency = 0
+                                 }
+                              })
+--Ignore--
+Determines if the value that the colorpicker holds does NOT get saved to config and does NOT get loaded when configs are loaded.
+local item_with_colorpicker = group:new_item(--[[params]])
+                              :add_colorpicker("flag", {
+                                 text = "Example Colorpicker Text"
+                              })

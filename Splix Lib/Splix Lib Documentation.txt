@@ -1,0 +1,191 @@
+local Library = -- Library here such as loadfile("libary.lua")() or loadstring(game:HttpGet("https://raw.githubusercontent.com/matas3535/PoopLibrary/main/Library.lua")()
+-- // Creating Window
+
+</Function> Library:New(
+  </Table> [
+    </String> Name,
+    </Vector2> Size,
+    </Color3> Accent
+  ]
+)
+
+-- // Window Functions
+
+</Function> Window:Initialize()
+
+</Function> Window:GetConfig()
+
+</Function> Window:LoadConfig(
+  </String> Config
+)
+
+</Function> Window:Move(
+  </Vector2> Position
+>
+
+</Function> Window:Fade()
+
+</Function> Window:Unload()
+
+-- // Indented Window Functions
+
+</Function> Window.watermark:UpdateSize()
+
+</Function> Window.watermark:Visibility()
+
+</Function> Window.watermark:Update(
+  </String> UpdateType,
+  </Any> UpdateValue
+)
+
+</Function> Window.keybindslist:Add(
+  </String> KeybindName,
+  </String> KeybindIndicator
+)
+
+</Function> Window.keybindslist:Remove(
+  </String> KeybindName
+)
+
+</Function> Window.keybindslist:Visibility()
+
+</Function> Window.keybindslist:Update(
+  </String> UpdateType,
+  </Any> UpdateValue
+)
+
+-- // Creating Pages
+
+</Function> Window:Page(
+  </Table> [
+    </String> Name
+  ]
+)
+
+-- // Creating Sections
+
+</Function> Page:Section(
+  </Table> [
+    </String> Name,
+    </String> Side,
+  ]
+)
+
+</Function> Page:MultiSection(
+  </Table> [
+    </String> Side,
+    </Vector2> Size,
+    </Table> Sections [
+      </String> Name (Value)
+    ]
+  ]
+)
+
+-- // Creating Content
+
+</Function> Section:Label(
+  </Table> [
+    </String> Name,
+    </Boolean> Middle,
+    </String> Pointer
+  ]
+)
+
+</Function> Section:Toggle(
+  </Table> [
+    </String> Name,
+    </Boolean> Default,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+</Function> Section:Slider(
+  </Table> [
+    </String> Name,
+    </Number> Default,
+    </Number> Minimum,
+    </Number> Maximum,
+    </String> Measurement,
+    </Number> Decimals,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+</Function> Section:Button(
+  </Table> [
+    </String> Name,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+</Function> Section:ButtonHolder(
+  </Table> [
+    </Table> Buttons [
+      </Table> [
+        </String> 1 Name,
+        </Function> 2 Callback
+      ]
+    ]
+  ]
+)
+
+</Function> Section:Dropdown(
+  </Table> [
+    </String> Name,
+    </Table> Options,
+    </Number> Default,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+</Function> Section:Multibox(
+  </Table> [
+    </String> Name,
+    </Table> Options,
+    </Table> Default,
+    </Number> Minimum,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+</Function> Section:Keybind(
+  </Table> [
+    </String> Name,
+    </Boolean> Default,
+    </String> Mode,
+    </String> KeybindName (Indicator),
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+
+</Function> Section:Colorpicker(
+  </Table> [
+    </String> Name,
+    </String> Info,
+    </Boolean> Default,
+    </Number> Alpha,
+    </String> Pointer,
+    </Function> Callback
+  ]
+)
+
+
+</Function> Section:ConfigBox(
+  </Table> [
+  ]
+)
+
+-- // Content Functions
+
+</Function> Content:Get()
+
+</Function> Content:Set(
+  </Any> State
+)
