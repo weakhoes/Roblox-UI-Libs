@@ -1,7 +1,8 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
-	Name = "Krypted Hub",
+	Name = "Wreston Hub", 
+	
 	Content = "Welcome To Krypted Hub! Have Fun!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
