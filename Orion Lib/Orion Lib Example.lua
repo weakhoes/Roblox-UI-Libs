@@ -1,14 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
-	Name = "Krypted Hub",
-	Content = "Welcome To Krypted Hub! Have Fun!",
+	Name = "Wreston Hub", 
+	Content = "Welcome To Wreston Hub! Have Fun!",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
 
-local Window = OrionLib:MakeWindow({Name = "Krypted Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "KryptedSaves"})
+local Window = OrionLib:MakeWindow({Name = "Wreston Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "KryptedSaves"})
 
 --Player Tab--
 
@@ -51,7 +51,7 @@ local SettingsSection = SettingsTab:AddSection({
 })
 
 SettingsSection:AddButton({
-	Name = "Destroy UI",
+	Name = "Close UI",
 	Callback = function()
         OrionLib:Destroy()
   	end    
