@@ -60,6 +60,11 @@
 # Criminality Lib
 ![image](https://user-images.githubusercontent.com/83477843/183231408-d00b8f56-ad81-4cd6-a037-85c5703c7b95.png)
 
+
+# PPHud Lib
+![image](https://user-images.githubusercontent.com/83477843/216861741-033770dd-9ca4-47a6-9daf-bcc37e680827.png)
+
+
 # Ligma Lib (ONLY WORKS WITH SYNAPSE X)
 ![image](https://user-images.githubusercontent.com/83477843/198436236-2487fe9f-ffcd-4d21-9a70-d65b5a8092e8.png)
 
