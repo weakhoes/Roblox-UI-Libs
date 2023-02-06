@@ -68,6 +68,10 @@
 ![image](https://user-images.githubusercontent.com/83477843/195494361-9650d0a7-c591-4692-99fa-db71caae9609.png)
 
 
+# Splix Drawing Lib
+![image](https://user-images.githubusercontent.com/83477843/216861166-bce3e75f-5aef-4c67-8a65-56ce271e4adf.png)
+
+
 # Jan Lib
 ![image](https://user-images.githubusercontent.com/83477843/216860810-63480114-9b5a-4d5c-abad-37e059ad8772.png)
 
