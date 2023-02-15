@@ -1,14 +1,14 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
-	Name = "Krypted Hub",
-	Content = "Welcome To Krypted Hub! Have Fun!",
+	Name = "Orion Example",
+	Content = "Orion Example",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 
 
-local Window = OrionLib:MakeWindow({Name = "Krypted Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "KryptedSaves"})
+local Window = OrionLib:MakeWindow({Name = "Orion Example", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
 --Player Tab--
 
