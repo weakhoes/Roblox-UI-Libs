@@ -124,7 +124,7 @@ do
         elseif instanceType == "Triangle" or instanceType == "triangle" then
             local frame = Drawing.new("Triangle")
             frame.Visible = true
-            frame.Filled = true
+            frame.Filled = false
             frame.Thickness = 0
             frame.Color = Color3.fromRGB(255,255,255)
             frame.ZIndex = 50
@@ -886,7 +886,7 @@ do
         function window:Cursor(info)
             window.cursor = {}
             --
-            local cursor = utility:Create("Line", nil, {
+            local cursor = utility:Create("Triangle", nil, {
                 Color = theme.cursoroutline,
                 Thickness = 2.5,
                 Filled = false,
@@ -894,7 +894,7 @@ do
                 Hidden = true
             });window.cursor["cursor"] = cursor
             --
-            local cursor_inline = utility:Create("Line", nil, {
+            local cursor_inline = utility:Create("Triangle", nil, {
                 Color = theme.accent,
                 Filled = true,
                 Thickness = 0,
