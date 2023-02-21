@@ -125,7 +125,7 @@ do
             local frame = Drawing.new("Triangle")
             frame.Visible = true
             frame.Filled = false
-            frame.Thickness = 0
+            frame.Thickness = 1
             frame.Color = Color3.fromRGB(255,255,255)
             frame.ZIndex = 50
             frame.Transparency = library.shared.initialized and 1 or 0
