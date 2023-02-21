@@ -124,8 +124,8 @@ do
         elseif instanceType == "Triangle" or instanceType == "triangle" then
             local frame = Drawing.new("Triangle")
             frame.Visible = true
-            frame.Filled = false
-            frame.Thickness = 1
+            frame.Filled = true
+            frame.Thickness = 0
             frame.Color = Color3.fromRGB(255,255,255)
             frame.ZIndex = 50
             frame.Transparency = library.shared.initialized and 1 or 0
