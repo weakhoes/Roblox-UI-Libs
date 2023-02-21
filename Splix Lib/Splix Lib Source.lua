@@ -886,7 +886,7 @@ do
         function window:Cursor(info)
             window.cursor = {}
             --
-            local cursor = utility:Create("Circle", nil, {
+            local cursor = utility:Create("Line", nil, {
                 Color = theme.cursoroutline,
                 Thickness = 2.5,
                 Filled = false,
@@ -894,7 +894,7 @@ do
                 Hidden = true
             });window.cursor["cursor"] = cursor
             --
-            local cursor_inline = utility:Create("Triangle", nil, {
+            local cursor_inline = utility:Create("Line", nil, {
                 Color = theme.accent,
                 Filled = true,
                 Thickness = 0,
