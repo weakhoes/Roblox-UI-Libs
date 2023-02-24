@@ -9,6 +9,13 @@
 ![image](https://user-images.githubusercontent.com/83477843/199402627-8af94b94-4cf5-494b-8ec0-88384c1471dc.png)
 
 
+# xsx Lib Credit (https://discord.gg/luabot)
+Loading Screen
+![image](https://user-images.githubusercontent.com/83477843/221064416-1a675d5d-21d3-44fa-8ee2-2c7b9bf6d047.png)
+Main Screen
+![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
+
+
 # Cerberus Lib
 ![image](https://user-images.githubusercontent.com/83477843/211185441-378b9b20-a680-4e8b-9889-8f982dc68f00.png)
 
