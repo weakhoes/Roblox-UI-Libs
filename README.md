@@ -72,6 +72,10 @@ Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/216861741-033770dd-9ca4-47a6-9daf-bcc37e680827.png)
 
 
+# Yun V2 Lib Credit (https://discord.gg/luabot)
+![image](https://user-images.githubusercontent.com/83477843/221065284-5cac4b97-88ac-4c00-99d1-013a852a8b17.png)
+
+
 # Ligma Lib (ONLY WORKS WITH SYNAPSE X)
 ![image](https://user-images.githubusercontent.com/83477843/198436236-2487fe9f-ffcd-4d21-9a70-d65b5a8092e8.png)
 
