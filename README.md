@@ -69,7 +69,7 @@
 ![image](https://user-images.githubusercontent.com/83477843/198436236-2487fe9f-ffcd-4d21-9a70-d65b5a8092e8.png)
 
 
-# Octernal Lib
+# Octernal Lib Credit (https://discord.gg/luabot)
 ![image](https://user-images.githubusercontent.com/83477843/221063919-cea842e5-de32-4af4-b959-5ab976b4b17f.png)
 
 
