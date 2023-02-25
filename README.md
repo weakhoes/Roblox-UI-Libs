@@ -2,18 +2,19 @@
 ----------------------------
 
 
-# xsx Lib Credit (https://discord.gg/luabot)
-Loading Screen
-![image](https://user-images.githubusercontent.com/83477843/221064416-1a675d5d-21d3-44fa-8ee2-2c7b9bf6d047.png)
-Main Screen
-![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
-
-
 # Akiri Lib Credit (https://discord.gg/97f9XgEcvk)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221380280-8e7e12b9-6812-4f06-8566-7f9f787b68f5.png)
 Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221380285-8a2ca9df-89bf-4ccd-b18e-6ccb7b8197c0.png)
+
+
+
+# xsx Lib Credit (https://discord.gg/luabot)
+Loading Screen
+![image](https://user-images.githubusercontent.com/83477843/221064416-1a675d5d-21d3-44fa-8ee2-2c7b9bf6d047.png)
+Main Screen
+![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
 
 
 # Octernal Lib Credit (https://discord.gg/luabot)
