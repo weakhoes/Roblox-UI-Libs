@@ -21,7 +21,7 @@ Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221063919-cea842e5-de32-4af4-b959-5ab976b4b17f.png)
 
 
-# Gamesneeze Lib (Documentation Very Minimal)
+# Gamesneeze Lib
 ![image](https://user-images.githubusercontent.com/83477843/221473769-630c54c1-3abe-4418-b372-797a61e6cbe7.png)
 
 
