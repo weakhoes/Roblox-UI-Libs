@@ -2,7 +2,7 @@
 ----------------------------
 
 
-# Akiri Lib Credit (https://discord.gg/aEMUuHgFyz)(xin.gg)
+# Akiri Lib Credit (https://discord.gg/aEMUuHgFyz)(((xin.gg)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221380280-8e7e12b9-6812-4f06-8566-7f9f787b68f5.png)
 Main Screen
