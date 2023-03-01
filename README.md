@@ -2,7 +2,7 @@
 ----------------------------
 
 
-# Akiri Lib Credit (https://discord.gg/aEMUuHgFyz(xin.gg)
+# Akiri Lib Credit (https://discord.gg/aEMUuHgFyz)(xin.gg)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221380280-8e7e12b9-6812-4f06-8566-7f9f787b68f5.png)
 Main Screen
@@ -10,14 +10,14 @@ Main Screen
 
 
 
-# xsx Lib Credit (https://discord.gg/aEMUuHgFyz(xin.gg)
+# xsx Lib Credit (https://discord.gg/aEMUuHgFyz)(xin.gg)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064416-1a675d5d-21d3-44fa-8ee2-2c7b9bf6d047.png)
 Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
 
 
-# Octernal Lib Credit (https://discord.gg/aEMUuHgFyz(xin.gg)
+# Octernal Lib Credit (https://discord.gg/aEMUuHgFyz)(xin.gg)
 ![image](https://user-images.githubusercontent.com/83477843/221063919-cea842e5-de32-4af4-b959-5ab976b4b17f.png)
 
 
