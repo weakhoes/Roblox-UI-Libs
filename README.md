@@ -17,8 +17,7 @@ Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
 
 
-# Octernal Lib Credit | (https://discord.gg/aEMUuHgFyz)
-(xin.gg)
+# Octernal Lib Credit (https://discord.gg/aEMUuHgFyz) | (xin.gg)
 ![image](https://user-images.githubusercontent.com/83477843/221063919-cea842e5-de32-4af4-b959-5ab976b4b17f.png)
 
 
