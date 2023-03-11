@@ -17,13 +17,17 @@ Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
 
 
+# informant.wtf Lib
+![image](https://user-images.githubusercontent.com/83477843/224496515-e5b6ce5e-934e-41b6-a87e-d3d4be932737.png)
+![image](https://user-images.githubusercontent.com/83477843/224496519-d286a621-9eb8-4515-9b53-e2ca4f21ff67.png)
+
+
 # Octernal Lib Credit (https://discord.gg/aEMUuHgFyz) | (xin.gg)
 ![image](https://user-images.githubusercontent.com/83477843/221063919-cea842e5-de32-4af4-b959-5ab976b4b17f.png)
 
 
 # Gamesneeze Lib
 ![image](https://user-images.githubusercontent.com/83477843/221473769-630c54c1-3abe-4418-b372-797a61e6cbe7.png)
-
 
 
 # Splix Drawing Lib
