@@ -2,6 +2,12 @@
 gzz#2600
 ----------------------------
 
+
+# informant.wtf Lib (credit to xz for lettin me keep this up)
+![image](https://user-images.githubusercontent.com/83477843/224496519-d286a621-9eb8-4515-9b53-e2ca4f21ff67.png)
+![image](https://user-images.githubusercontent.com/83477843/224496515-e5b6ce5e-934e-41b6-a87e-d3d4be932737.png)
+
+
 # Abyss Lib Credit(https://github.com/Eazvy/UILibs)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/224578562-e6695969-74dd-407d-a28a-29cbf515f6dc.png)
@@ -22,11 +28,6 @@ Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064416-1a675d5d-21d3-44fa-8ee2-2c7b9bf6d047.png)
 Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/221064445-ebe43f93-47d2-47a1-b452-293d242a02b4.png)
-
-
-# informant.wtf Lib (credit to xz for lettin me keep this up)
-![image](https://user-images.githubusercontent.com/83477843/224496519-d286a621-9eb8-4515-9b53-e2ca4f21ff67.png)
-![image](https://user-images.githubusercontent.com/83477843/224496515-e5b6ce5e-934e-41b6-a87e-d3d4be932737.png)
 
 
 # Octernal Lib Credit (https://discord.gg/aEMUuHgFyz) | (xin.gg)
