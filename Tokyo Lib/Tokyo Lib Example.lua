@@ -4,7 +4,7 @@ local ValueText = "Value Is Now :"
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/dohmai/Tokyo/main/Libraries/UI"))({
     cheatname = "Title Here", -- watermark text
-    gamename = "gzz#2600", -- watermark text
+    gamename = "Title Here", -- watermark text
 })
 
 library:init()
