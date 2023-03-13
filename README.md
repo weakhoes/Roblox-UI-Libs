@@ -3,7 +3,7 @@ gzz#2600
 ----------------------------
 
 
-# informant.wtf Lib (credit to xz for lettin me keep this up)
+# informant.wtf Lib (credit to xz#1111 for lettin me keep this up)
 ![image](https://user-images.githubusercontent.com/83477843/224496519-d286a621-9eb8-4515-9b53-e2ca4f21ff67.png)
 ![image](https://user-images.githubusercontent.com/83477843/224496515-e5b6ce5e-934e-41b6-a87e-d3d4be932737.png)
 
@@ -14,7 +14,7 @@ gzz#2600
 
 
 
-# Abyss Lib Credit(credit to xz for the source)
+# Abyss Lib Credit(credit to xz#1111 for the source)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/224578562-e6695969-74dd-407d-a28a-29cbf515f6dc.png)
 # Main Screen
