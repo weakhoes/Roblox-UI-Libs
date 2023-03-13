@@ -1,3 +1,4 @@
+--Credit to xz#1111 for source
 local Ui = loadstring(game:HttpGet("https://raw.githubusercontent.com/drillygzzly/Other/main/abyssoruce%40eayz.lua"))()
 local Ui = Library
 
