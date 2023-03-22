@@ -87,7 +87,7 @@ lib.init = function(title, accent, togglekey)
 
 	uiTopLine.Name = "uiTopLine"
 	uiTopLine.Parent = uiTop
-	uiTopLine.BackgroundColor3 = lib.accent
+	uiTopLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	uiTopLine.BorderSizePixel = 0
 	uiTopLine.Position = UDim2.new(0, 0, 1, -1)
 	uiTopLine.Size = UDim2.new(1, 0, 0, 2)
