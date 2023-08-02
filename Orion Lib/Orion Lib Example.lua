@@ -1,8 +1,8 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 OrionLib:MakeNotification({
-	Name = "Orion Example",
-	Content = "Orion Example",
+	Name = "Script",
+	Content = "Script Açıldı İyi Oyunlar",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
@@ -13,28 +13,28 @@ local Window = OrionLib:MakeWindow({Name = "Orion Example", HidePremium = false,
 --Player Tab--
 
 local PlayerTab = Window:MakeTab({
-	Name = "Player",
+	Name = "Reach",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 local PlayerSection = PlayerTab:AddSection({
-	Name = "Player"
+	Name = "Reach"
 })
+ReachSection:AddButton({
+		Name = "200 STUD"
+     Callback = function()
+			while wait(0.3) do
+    local args = {
+    [1] = workspace.TPSSystem.TPS,
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = 30,
+    [4] = Vector3.new(4000000, 300, 4000000)
+}
 
-
-PlayerSection:AddSlider({
-	Name = "Walkspeed",
-	Min = 16,
-	Max = 100,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Walkspeed",
-	Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
-})
+workspace.FE.Actions.KickG1:FireServer(unpack(args))
+			end
+		})
 
 --Player Tab End--
 
