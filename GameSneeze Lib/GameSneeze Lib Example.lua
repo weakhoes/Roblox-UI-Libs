@@ -17,7 +17,6 @@ local Window = Library:New({
 
 local Page = Window:Page({
     Name = "Page" -- name, Name, title, Title
-    IsVisible = true
 })
 
 local PlayerPage = Window:Page({
