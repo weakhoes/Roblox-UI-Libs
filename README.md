@@ -1,5 +1,4 @@
 # Roblox UI Libs 
-gzz#0007
 ----------------------------
 
 
@@ -8,20 +7,20 @@ gzz#0007
 ![image](https://user-images.githubusercontent.com/83477843/224496515-e5b6ce5e-934e-41b6-a87e-d3d4be932737.png)
 
 
-# Tokyo Lib (credit https://github.com/Eazvy/UILibs)
+# Tokyo Lib (FIXED)
 ![image](https://user-images.githubusercontent.com/83477843/224616062-37b86068-90c2-4bb9-a825-a79abea1d783.png)
 ![image](https://user-images.githubusercontent.com/83477843/224616067-a0429dd3-2625-4c47-8971-0b187d688758.png)
 
 
 
-# Abyss Lib Credit(credit to xz#1111 for the source)
+# Abyss Lib Credit (FIXED)
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/224578562-e6695969-74dd-407d-a28a-29cbf515f6dc.png)
 # Main Screen
 ![image](https://user-images.githubusercontent.com/83477843/224578567-f8e98702-1178-46b6-8465-9f9811870283.png)
 
 
-# Akiri Lib Credit (https://discord.gg/aEMUuHgFyz) | (xin.gg)
+# Akiri Lib Credit (FIXED
 Loading Screen
 ![image](https://user-images.githubusercontent.com/83477843/221380280-8e7e12b9-6812-4f06-8566-7f9f787b68f5.png)
 Main Screen
