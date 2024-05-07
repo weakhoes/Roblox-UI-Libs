@@ -2,7 +2,7 @@ local Decimals = 4
 local Clock = os.clock()
 local ValueText = "Value Is Now :"
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/dohmai/Tokyo/main/Libraries/UI"))({
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/drillygzzly/Roblox-UI-Libs/main/1%20Tokyo%20Lib%20(FIXED)/Tokyo%20Lib%20Source.lua"))({
     cheatname = "Title Here", -- watermark text
     gamename = "Title Here", -- watermark text
 })
