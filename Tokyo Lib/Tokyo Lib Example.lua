@@ -2,7 +2,7 @@ local Decimals = 4
 local Clock = os.clock()
 local ValueText = "Value Is Now :"
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/dohmai/Tokyo/main/Libraries/UI"))({
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/drillygzzly/Other/main/42424"))({
     cheatname = "Title Here", -- watermark text
     gamename = "Title Here", -- watermark text
 })
