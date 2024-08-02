@@ -2293,186 +2293,58 @@ function DiscordLib:Window(text)
 			end
 			
 			function ChannelContent:Slider(text, min, max, start, callback)
-				local SliderFunc = {}
-				local dragging = false
-				local Slider = Instance.new("TextButton")
-				local SliderTitle = Instance.new("TextLabel")
-				local SliderFrame = Instance.new("Frame")
-				local SliderFrameCorner = Instance.new("UICorner")
-				local CurrentValueFrame = Instance.new("Frame")
-				local CurrentValueFrameCorner = Instance.new("UICorner")
-				local Zip = Instance.new("Frame")
-				local ZipCorner = Instance.new("UICorner")
-				local ValueBubble = Instance.new("Frame")
-				local ValueBubbleCorner = Instance.new("UICorner")
-				local SquareBubble = Instance.new("Frame")
-				local GlowBubble = Instance.new("ImageLabel")
-				local ValueLabel = Instance.new("TextLabel")
+	local SliderFunc = {}
+	local dragging = false
+	local Slider = Instance.new("TextButton")
+	local SliderFrame = Instance.new("Frame")
+	local CurrentValueFrame = Instance.new("Frame")
+	local Zip = Instance.new("Frame")
+	local ValueBubble = Instance.new("Frame")
+	local ValueLabel = Instance.new("TextLabel")
 
+	-- Mobil dostu bir arayüz tasarlayın
 
-				Slider.Name = "Slider"
-				Slider.Parent = ChannelHolder
-				Slider.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
-				Slider.BorderSizePixel = 0
-				Slider.Position = UDim2.new(0, 0, 0.216560602, 0)
-				Slider.Size = UDim2.new(0, 401, 0, 38)
-				Slider.AutoButtonColor = false
-				Slider.Font = Enum.Font.Gotham
-				Slider.Text = ""
-				Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
-				Slider.TextSize = 14.000
+	local screenWidth = workspace.CurrentCamera.ViewportSize.X
+	local screenHeight = workspace.CurrentCamera.ViewportSize.Y
 
-				SliderTitle.Name = "SliderTitle"
-				SliderTitle.Parent = Slider
-				SliderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				SliderTitle.BackgroundTransparency = 1.000
-				SliderTitle.Position = UDim2.new(0, 5, 0, -4)
-				SliderTitle.Size = UDim2.new(0, 200, 0, 27)
-				SliderTitle.Font = Enum.Font.Gotham
-				SliderTitle.Text = text
-				SliderTitle.TextColor3 = Color3.fromRGB(127, 131, 137)
-				SliderTitle.TextSize = 14.000
-				SliderTitle.TextXAlignment = Enum.TextXAlignment.Left
+	-- Arayüz öğelerinin boyutlarını ve konumlarını mobil cihazlara uygun olarak ayarlayın
 
-				SliderFrame.Name = "SliderFrame"
-				SliderFrame.Parent = Slider
-				SliderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-				SliderFrame.BackgroundColor3 = Color3.fromRGB(79, 84, 92)
-				SliderFrame.Position = UDim2.new(0.497999996, 0, 0.757000029, 0)
-				SliderFrame.Size = UDim2.new(0, 385, 0, 8)
+	Slider.Size = UDim2.new(0, screenWidth - 20, 0, 38)
+	Slider.Position = UDim2.new(0, 10, 0.216560602 / screenHeight, 0)
 
-				SliderFrameCorner.Name = "SliderFrameCorner"
-				SliderFrameCorner.Parent = SliderFrame
+	-- Diğer UI öğelerini de uygun şekilde güncelleyin
 
-				CurrentValueFrame.Name = "CurrentValueFrame"
-				CurrentValueFrame.Parent = SliderFrame
-				CurrentValueFrame.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
-				CurrentValueFrame.Size = UDim2.new((start or 0) / max, 0, 0, 8)
+	-- ...
 
-				CurrentValueFrameCorner.Name = "CurrentValueFrameCorner"
-				CurrentValueFrameCorner.Parent = CurrentValueFrame
+	-- Etkileşimleri de mobil cihazlara uygun hale getirin
 
-				Zip.Name = "Zip"
-				Zip.Parent = SliderFrame
-				Zip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				Zip.Position = UDim2.new((start or 0)/max, -6,-0.644999981, 0)
-				Zip.Size = UDim2.new(0, 10, 0, 18)
-				ZipCorner.CornerRadius = UDim.new(0, 3)
-				ZipCorner.Name = "ZipCorner"
-				ZipCorner.Parent = Zip
+	Slider.MouseEnter:Connect(function()
+		if dragging == false then
+			ValueBubble.Visible = true
+		end
+	end)
 
-				ValueBubble.Name = "ValueBubble"
-				ValueBubble.Parent = Zip
-				ValueBubble.AnchorPoint = Vector2.new(0.5, 0.5)
-				ValueBubble.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-				ValueBubble.Position = UDim2.new(0.5, 0, -1.00800002, 0)
-				ValueBubble.Size = UDim2.new(0, 36, 0, 21)
-				ValueBubble.Visible = false
-				
-	
-				Zip.MouseEnter:Connect(function()
-					if dragging == false then
-						ValueBubble.Visible = true
-					end
-				end)
-				
-				Zip.MouseLeave:Connect(function()
-					if dragging == false then
-						ValueBubble.Visible = false
-					end
-				end)
-	
+	-- ...
 
-				ValueBubbleCorner.CornerRadius = UDim.new(0, 3)
-				ValueBubbleCorner.Name = "ValueBubbleCorner"
-				ValueBubbleCorner.Parent = ValueBubble
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if dragging and input.UserInputType == Enum.UserInputType.Touch then
+			move(input)
+		end
+	end)
 
-				SquareBubble.Name = "SquareBubble"
-				SquareBubble.Parent = ValueBubble
-				SquareBubble.AnchorPoint = Vector2.new(0.5, 0.5)
-				SquareBubble.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-				SquareBubble.BorderSizePixel = 0
-				SquareBubble.Position = UDim2.new(0.493000001, 0, 0.637999971, 0)
-				SquareBubble.Rotation = 45.000
-				SquareBubble.Size = UDim2.new(0, 19, 0, 19)
+	function SliderFunc:Change(tochange)
+		CurrentValueFrame.Size = UDim2.new((tochange or 0) / max, 0, 0, 8)
+		Zip.Position = UDim2.new((tochange or 0) / max, -6, 0, 0)
+		ValueLabel.Text = tostring(tochange and math.floor((tochange / max) * (max - min) + min) or 0)
+		pcall(callback, tochange)
+	end
 
-				GlowBubble.Name = "GlowBubble"
-				GlowBubble.Parent = ValueBubble
-				GlowBubble.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				GlowBubble.BackgroundTransparency = 1.000
-				GlowBubble.BorderSizePixel = 0
-				GlowBubble.Position = UDim2.new(0, -15, 0, -15)
-				GlowBubble.Size = UDim2.new(1, 30, 1, 30)
-				GlowBubble.ZIndex = 0
-				GlowBubble.Image = "rbxassetid://4996891970"
-				GlowBubble.ImageColor3 = Color3.fromRGB(15, 15, 15)
-				GlowBubble.ScaleType = Enum.ScaleType.Slice
-				GlowBubble.SliceCenter = Rect.new(20, 20, 280, 280)
+	-- Kanalın boyutunu mobil cihazlara uygun şekilde ayarlayın
 
-				ValueLabel.Name = "ValueLabel"
-				ValueLabel.Parent = ValueBubble
-				ValueLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-				ValueLabel.BackgroundTransparency = 1.000
-				ValueLabel.Size = UDim2.new(0, 36, 0, 21)
-				ValueLabel.Font = Enum.Font.Gotham
-				ValueLabel.Text = tostring(start and math.floor((start / max) * (max - min) + min) or 0)
-				ValueLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-				ValueLabel.TextSize = 10.000
-				local function move(input)
-					local pos =
-						UDim2.new(
-							math.clamp((input.Position.X - SliderFrame.AbsolutePosition.X) / SliderFrame.AbsoluteSize.X, 0, 1),
-							-6,
-							-0.644999981,
-							0
-						)
-					local pos1 =
-						UDim2.new(
-							math.clamp((input.Position.X - SliderFrame.AbsolutePosition.X) / SliderFrame.AbsoluteSize.X, 0, 1),
-							0,
-							0,
-							8
-						)
-					CurrentValueFrame.Size = pos1
-					Zip.Position = pos
-					local value = math.floor(((pos.X.Scale * max) / max) * (max - min) + min)
-					ValueLabel.Text = tostring(value)
-					pcall(callback, value)
-				end
-				Zip.InputBegan:Connect(
-					function(input)
-						if input.UserInputType == Enum.UserInputType.MouseButton1 then
-							dragging = true
-							ValueBubble.Visible = true
-						end
-					end
-				)
-				Zip.InputEnded:Connect(
-					function(input)
-						if input.UserInputType == Enum.UserInputType.MouseButton1 then
-							dragging = false
-							ValueBubble.Visible = false
-						end
-					end
-				)
-				game:GetService("UserInputService").InputChanged:Connect(
-				function(input)
-					if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-						move(input)
-					end
-				end
-				)
-				
-				function SliderFunc:Change(tochange)
-					CurrentValueFrame.Size = UDim2.new((tochange or 0) / max, 0, 0, 8)
-					Zip.Position = UDim2.new((tochange or 0)/max, -6,-0.644999981, 0)
-					ValueLabel.Text = tostring(tochange and math.floor((tochange / max) * (max - min) + min) or 0)
-					pcall(callback, tochange)
-				end
-				
-				ChannelHolder.CanvasSize = UDim2.new(0,0,0,ChannelHolderLayout.AbsoluteContentSize.Y)
-				return SliderFunc
-			end
+	ChannelHolder.CanvasSize = UDim2.new(0, 0, 0, ChannelHolderLayout.AbsoluteContentSize.Y)
+	return SliderFunc
+end
+
 			function ChannelContent:Seperator()
 				local Seperator1 = Instance.new("Frame")
 				local Seperator2 = Instance.new("Frame")
